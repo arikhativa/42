@@ -6,7 +6,7 @@
 /*   By: yrabby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/02 16:15:43 by yrabby            #+#    #+#             */
-/*   Updated: 2019/04/03 13:10:27 by yrabby           ###   ########.fr       */
+/*   Updated: 2019/04/03 13:53:11 by yrabby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,12 @@ char	*ft_strncpy(char *dst, char *src, unsigned int n);
 char	*ft_strchr(char *str, int n);
 char	*ft_strstr(char *s1, char *s2);
 char	*ft_strnstr(char *s1, char *s2, unsigned int n);
+int		ft_isalpha(char c);
+int		ft_isdigit(char c);
+int		ft_isascii(char c);
+int		ft_isprint(char c);
+int		ft_isalnum(char c);
+
 
 
 
