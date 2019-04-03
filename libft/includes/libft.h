@@ -6,7 +6,7 @@
 /*   By: yrabby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/02 16:15:43 by yrabby            #+#    #+#             */
-/*   Updated: 2019/04/03 13:53:11 by yrabby           ###   ########.fr       */
+/*   Updated: 2019/04/03 14:54:12 by yrabby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,9 +33,9 @@ int		ft_isdigit(char c);
 int		ft_isascii(char c);
 int		ft_isprint(char c);
 int		ft_isalnum(char c);
-
-
-
+char	*ft_strcat(char *dst, char *src);
+char	*ft_strncat(char *dst, char *src, unsigned int i);
+int		ft_strlcat(char *dst, char *src, unsigned int i);
 
 
 

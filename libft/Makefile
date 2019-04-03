@@ -6,7 +6,7 @@
 #    By: yrabby <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/04/02 15:48:51 by yrabby            #+#    #+#              #
-#    Updated: 2019/04/03 13:52:47 by yrabby           ###   ########.fr        #
+#    Updated: 2019/04/03 14:53:45 by yrabby           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,10 @@ SRC = src/ft_strlen.c \
 	  src/ft_isdigit.c \
 	  src/ft_isascii.c \
 	  src/ft_isprint.c \
-	  src/ft_isalnum.c
+	  src/ft_isalnum.c \
+	  src/ft_strcat.c \
+	  src/ft_strncat.c \
+	  src/ft_strlcat.c
 
 OBJ = ft_strlen.o \
 	  ft_strdup.o \
@@ -44,7 +47,10 @@ OBJ = ft_strlen.o \
 	  ft_isdigit.o \
 	  ft_isascii.o \
 	  ft_isprint.o \
-	  ft_isalnum.o
+	  ft_isalnum.o \
+	  ft_strcat.o \
+	  ft_strncat.o \
+	  ft_strlcat.o
 
 HED = includes/libft.h
 
