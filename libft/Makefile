@@ -6,19 +6,33 @@
 #    By: yrabby <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/04/02 15:48:51 by yrabby            #+#    #+#              #
-#    Updated: 2019/04/02 16:13:40 by yrabby           ###   ########.fr        #
+#    Updated: 2019/04/03 11:21:09 by yrabby           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
-SRC = ft_strlen.c \
-	  ft_strdup.c
+SRC = src/ft_strlen.c \
+	  src/ft_strdup.c \
+	  src/ft_atoi.c \
+	  src/ft_strcmp.c \
+	  src/ft_strncmp.c \
+	  src/ft_strcpy.c \
+	  src/ft_strncpy.c \
+	  src/ft_strchr.c \
+	  src/ft_strrchr.c
 
 OBJ = ft_strlen.o \
-	  ft_strdup.o
+	  ft_strdup.o \
+	  ft_atoi.o \
+	  ft_strcmp.o \
+	  ft_strncmp.o \
+	  ft_strcpy.o \
+	  ft_strncpy.o \
+	  ft_strchr.o \
+	  ft_strrchr.o
 
-HED = libft.h
+HED = includes/libft.h
 
 FLAG = -Wall -Werror -Wextra
 

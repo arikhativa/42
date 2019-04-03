@@ -6,11 +6,11 @@
 /*   By: yrabby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/02 16:06:10 by yrabby            #+#    #+#             */
-/*   Updated: 2019/04/02 16:23:36 by yrabby           ###   ########.fr       */
+/*   Updated: 2019/04/03 11:24:06 by yrabby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 
 char	*ft_strdup(char *str)
 {
