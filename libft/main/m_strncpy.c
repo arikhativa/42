@@ -1,7 +1,7 @@
 
 #include <stdio.h>
 #include <string.h>
-#include "../libft.h"
+#include "../includes/libft.h"
 #define N 10
 
 int main()

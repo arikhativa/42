@@ -6,7 +6,7 @@
 #    By: yrabby <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/04/02 15:48:51 by yrabby            #+#    #+#              #
-#    Updated: 2019/04/03 11:21:09 by yrabby           ###   ########.fr        #
+#    Updated: 2019/04/03 13:10:00 by yrabby           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,9 @@ SRC = src/ft_strlen.c \
 	  src/ft_strcpy.c \
 	  src/ft_strncpy.c \
 	  src/ft_strchr.c \
-	  src/ft_strrchr.c
+	  src/ft_strrchr.c \
+	  src/ft_strstr.c \
+	  src/ft_strnstr.c
 
 OBJ = ft_strlen.o \
 	  ft_strdup.o \
@@ -30,7 +32,9 @@ OBJ = ft_strlen.o \
 	  ft_strcpy.o \
 	  ft_strncpy.o \
 	  ft_strchr.o \
-	  ft_strrchr.o
+	  ft_strrchr.o \
+	  ft_strstr.o \
+	  ft_strnstr.o
 
 HED = includes/libft.h
 
