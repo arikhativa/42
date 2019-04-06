@@ -6,7 +6,7 @@
 /*   By: yrabby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/06 11:16:44 by yrabby            #+#    #+#             */
-/*   Updated: 2019/04/06 11:20:02 by yrabby           ###   ########.fr       */
+/*   Updated: 2019/04/06 14:10:37 by yrabby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,19 @@
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
+	size_t i;
+	char *p1;
+	const char *p2;
 
+	p1 = dst;
+	p2 = src;
+	i = 0;
+	if (ft_strlen(src) > ft_strlen(dst) || (int)n > ft_strlen(dst))
+		return (NULL);
+	while (i < n)
+	{
+		p1[i] = p2[i];
+		i++;
+	}
+	return (dst);
 }

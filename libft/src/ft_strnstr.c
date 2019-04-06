@@ -6,11 +6,10 @@
 /*   By: yrabby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/03 13:03:20 by yrabby            #+#    #+#             */
-/*   Updated: 2019/04/06 11:13:27 by yrabby           ###   ########.fr       */
+/*   Updated: 2019/04/06 13:49:04 by yrabby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include "../includes/libft.h"
 
 char	*ft_strnstr(const char *s1, const char *s2, size_t n)
