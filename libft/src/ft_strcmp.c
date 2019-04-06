@@ -6,11 +6,11 @@
 /*   By: yrabby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/03 09:06:07 by yrabby            #+#    #+#             */
-/*   Updated: 2019/04/03 09:09:30 by yrabby           ###   ########.fr       */
+/*   Updated: 2019/04/06 10:24:04 by yrabby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_strcmp(char *s1, char *s2)
+int		ft_strcmp(const char *s1, const char *s2)
 {
 	int n;
 

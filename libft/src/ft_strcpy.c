@@ -6,11 +6,11 @@
 /*   By: yrabby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/03 09:27:27 by yrabby            #+#    #+#             */
-/*   Updated: 2019/04/03 09:33:50 by yrabby           ###   ########.fr       */
+/*   Updated: 2019/04/06 11:19:12 by yrabby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcpy(char *dst, char *src)
+char	*ft_strcpy(char *dst, const char *src)
 {
 	int n;
 

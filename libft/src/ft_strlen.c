@@ -6,11 +6,11 @@
 /*   By: yrabby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/02 16:03:51 by yrabby            #+#    #+#             */
-/*   Updated: 2019/04/02 16:05:49 by yrabby           ###   ########.fr       */
+/*   Updated: 2019/04/06 10:21:17 by yrabby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_strlen(char *str)
+int		ft_strlen(const char *str)
 {
 	int n;
 

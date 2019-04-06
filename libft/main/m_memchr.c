@@ -7,7 +7,7 @@
 int main()
 {
 	char s1[] = "yyypyyuuutty";
-	int ndel = 't';
+	int ndel = 'p';
 	char *p1;
 	char *p2;
 

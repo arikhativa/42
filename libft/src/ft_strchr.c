@@ -6,13 +6,13 @@
 /*   By: yrabby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/03 10:31:30 by yrabby            #+#    #+#             */
-/*   Updated: 2019/04/03 11:13:14 by yrabby           ###   ########.fr       */
+/*   Updated: 2019/04/06 11:09:31 by yrabby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "../includes/libft.h"
 
-char	*ft_strchr(char *str, int n)
+char	*ft_strchr(const char *str, int n)
 {
 	int i;
 
@@ -20,10 +20,10 @@ char	*ft_strchr(char *str, int n)
 	while (str[i])
 	{
 		if (str[i] == (char)n)
-			return (&str[i]);
+			return ((char*)(str + i));
 		i++;
 	}
 	if (str[i])
-		return (&str[i]);
+		return ((char*)(str + i));
 	return (NULL);
 }

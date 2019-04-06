@@ -1,32 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yrabby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/04 12:32:19 by yrabby            #+#    #+#             */
-/*   Updated: 2019/04/06 10:34:52 by yrabby           ###   ########.fr       */
+/*   Created: 2019/04/06 10:36:53 by yrabby            #+#    #+#             */
+/*   Updated: 2019/04/06 10:36:58 by yrabby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
-
-int		ft_memcmp(void *s1, void *s2, size_t n)
+int ft_toupper(int n)
 {
-	size_t i;
-	char *p1;
-	char *p2;
-
-	p1 = s1;
-	p2 = s2;
-
-	i = 0;
-	while (i < n)
-	{
-		if (p1[i] != p2[i])
-			return (p1[i] - p2[i]);
-		i++;
-	}
-	return (p1[i] - p2[i]);
+	if (n >= 'A' && n <= 'Z')
+		n = n + 32;
+	return (n);
 }

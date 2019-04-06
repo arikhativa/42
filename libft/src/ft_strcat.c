@@ -6,20 +6,20 @@
 /*   By: yrabby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/03 13:58:53 by yrabby            #+#    #+#             */
-/*   Updated: 2019/04/03 14:04:56 by yrabby           ###   ########.fr       */
+/*   Updated: 2019/04/06 11:01:15 by yrabby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcat(char *dst, char *src)
+char	*ft_strcat(char *dst, const char *src)
 {
 	int n;
 	int a;
+
 
 	n = 0;
 	a = 0;
 	while (dst[n])
 		n++;
-
 	while (src[a])
 	{
 		dst[n + a] = src[a];

@@ -6,19 +6,19 @@
 /*   By: yrabby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/03 12:46:47 by yrabby            #+#    #+#             */
-/*   Updated: 2019/04/03 13:01:49 by yrabby           ###   ########.fr       */
+/*   Updated: 2019/04/06 11:13:52 by yrabby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
-char	*ft_strstr(char *s1, char *s2)
+char	*ft_strstr(const char *s1, const char *s2)
 {
 	int i;
 	int z;
 
 	if (!(*s2))
-		return (s1);
+		return ((char*)s1);
 	i = 0;
 	z = 0;
 	while (s1[i])
@@ -26,7 +26,7 @@ char	*ft_strstr(char *s1, char *s2)
 		while (s1[i + z] == s2[z])
 		{
 			if (s2[z + 1] == '\0')
-				return (&s1[i]);
+				return ((char*)(s1 + i));
 			z++;
 		}
 		z = 0;

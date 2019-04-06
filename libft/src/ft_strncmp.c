@@ -6,13 +6,15 @@
 /*   By: yrabby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/03 09:18:15 by yrabby            #+#    #+#             */
-/*   Updated: 2019/04/03 09:23:17 by yrabby           ###   ########.fr       */
+/*   Updated: 2019/04/06 10:25:36 by yrabby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_strncmp(char *s1, char *s2, int n)
+#include "../includes/libft.h"
+
+int		ft_strncmp(const char *s1,const  char *s2, size_t n)
 {
-	int i;
+	size_t i;
 
 	i = 0;
 	while (s1[i] && i < (n - 1))

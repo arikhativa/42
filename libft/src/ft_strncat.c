@@ -6,14 +6,16 @@
 /*   By: yrabby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/03 14:13:03 by yrabby            #+#    #+#             */
-/*   Updated: 2019/04/03 14:16:48 by yrabby           ###   ########.fr       */
+/*   Updated: 2019/04/06 11:12:07 by yrabby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strncat(char *dst, char *src, unsigned int i)
+#include "../includes/libft.h"
+
+char	*ft_strncat(char *dst, const char *src, size_t i)
 {
-	unsigned int n;
-	unsigned int a;
+	size_t n;
+	size_t a;
 
 	n = 0;
 	a = 0;
