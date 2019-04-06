@@ -6,13 +6,15 @@
 #    By: yrabby <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/04/02 15:48:51 by yrabby            #+#    #+#              #
-#    Updated: 2019/04/04 11:46:45 by yrabby           ###   ########.fr        #
+#    Updated: 2019/04/06 15:09:37 by yrabby           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
-SRC = $(wildcard src/*.c)
+SRC1 = $(wildcard src1/*.c)
+
+SRC2 = $(wildcard src2/*.c)
 
 OBJ = $(wildcard *.o)
 
@@ -26,8 +28,8 @@ all: make_obj
 
 .PRECIOUS: $(SRC) $(HED)
 
-make_obj: $(SRC) 
-		@gcc $(FLAG) -c $(SRC) -I$(HED)
+make_obj: $(SRC1) $(SRC2) 
+		@gcc $(FLAG) -c $^ -I$(HED)
 
 lib: $(OBJ)
 		@ar rv $(NAME) $^
