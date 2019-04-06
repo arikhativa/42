@@ -6,7 +6,7 @@
 /*   By: yrabby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/02 16:15:43 by yrabby            #+#    #+#             */
-/*   Updated: 2019/04/03 14:54:12 by yrabby           ###   ########.fr       */
+/*   Updated: 2019/04/04 12:47:06 by yrabby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,9 @@ int		ft_isalnum(char c);
 char	*ft_strcat(char *dst, char *src);
 char	*ft_strncat(char *dst, char *src, unsigned int i);
 int		ft_strlcat(char *dst, char *src, unsigned int i);
-
+void	*ft_memset(void *ptr, int n, unsigned int len);
+int		ft_memcmp(void *s1, void *s2, unsigned int n);
+void	*ft_memchr(void *str, int c, unsigned int n);
 
 
 #endif

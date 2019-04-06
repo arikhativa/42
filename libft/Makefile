@@ -6,19 +6,17 @@
 #    By: yrabby <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/04/02 15:48:51 by yrabby            #+#    #+#              #
-#    Updated: 2019/04/04 11:12:01 by yrabby           ###   ########.fr        #
+#    Updated: 2019/04/04 11:46:45 by yrabby           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
-SRC_DIR = ./src
+SRC = $(wildcard src/*.c)
 
-SRC = $(shell find $(SRC_DIR) -type f | grep -E "\.c$$")
+OBJ = $(wildcard *.o)
 
-OBJ = $(shell find . -type f | grep -E "\.o$$")
-
-HED = libft.h
+HED = includes/libft.h
 
 FLAG = -Wall -Werror -Wextra
 
@@ -26,18 +24,20 @@ all: make_obj
 
 .PHONY: clean fclean re all
 
+.PRECIOUS: $(SRC) $(HED)
+
 make_obj: $(SRC) 
-		gcc $(FLAG) -c $(SRC) -I$(HED)
+		@gcc $(FLAG) -c $(SRC) -I$(HED)
 
 lib: $(OBJ)
-		ar rv $(NAME) $^
-		ranlib $(NAME)
-		/bin/rm -f $^
+		@ar rv $(NAME) $^
+		@ranlib $(NAME)
+		@/bin/rm -f $^
 
 clean: $(OBJ)
-		/bin/rm -f $^
+		@/bin/rm -f $^
 
 fclean: clean
-		/bin/rm -f $(NAME)
+		@/bin/rm -f $(NAME)
 
 re: fclean all
