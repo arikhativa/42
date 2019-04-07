@@ -1,22 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnew.c                                        :+:      :+:    :+:   */
+/*   ft_strmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yrabby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/06 16:27:10 by yrabby            #+#    #+#             */
-/*   Updated: 2019/04/07 11:55:33 by yrabby           ###   ########.fr       */
+/*   Created: 2019/04/07 13:18:17 by yrabby            #+#    #+#             */
+/*   Updated: 2019/04/07 13:24:25 by yrabby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-char	*ft_strnew(size_t size)
+char	*ft_strmap(const char *s, char (*f)(char))
 {
-	char *str;
+	char *new;
+	int i;
 
-	str = ft_memalloc(size + 1);
-	str[size + 1] = '\0';
-	return (str);
+	i = 0;
+	new = ft_strnew(ft_strlen(s));
+	if (new == NULL)
+		return (NULL);
+	while (s[i])
+	{
+		new[i] = (*f)(s[i]);
+		i++;
+	}
+	return (new);
 }

@@ -1,22 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnew.c                                        :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yrabby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/06 16:27:10 by yrabby            #+#    #+#             */
-/*   Updated: 2019/04/07 11:55:33 by yrabby           ###   ########.fr       */
+/*   Created: 2019/04/07 13:07:03 by yrabby            #+#    #+#             */
+/*   Updated: 2019/04/07 13:12:40 by yrabby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
-
-char	*ft_strnew(size_t size)
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	char *str;
+	unsigned int i;
 
-	str = ft_memalloc(size + 1);
-	str[size + 1] = '\0';
-	return (str);
+	i = 0;
+	while (s[i])
+	{
+		(*f)(i, s + i);
+		i++;
+	}
 }

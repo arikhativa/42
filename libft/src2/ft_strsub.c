@@ -1,22 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnew.c                                        :+:      :+:    :+:   */
+/*   ft_strsub.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yrabby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/06 16:27:10 by yrabby            #+#    #+#             */
-/*   Updated: 2019/04/07 11:55:33 by yrabby           ###   ########.fr       */
+/*   Created: 2019/04/07 09:32:50 by yrabby            #+#    #+#             */
+/*   Updated: 2019/04/07 09:40:22 by yrabby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-char	*ft_strnew(size_t size)
+char	*ft_strsub(const char *s, unsigned int start, size_t len)
 {
-	char *str;
+	char *new;
+	size_t n;
 
-	str = ft_memalloc(size + 1);
-	str[size + 1] = '\0';
-	return (str);
+	n = 0;
+	new = ft_strnew(len);
+	if (new == NULL)
+		return (NULL);
+	while (n < len)
+	{
+		new[n] = s[start + n];
+		n++;
+	}
+	return(new);
 }

@@ -6,7 +6,7 @@
 /*   By: yrabby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/02 16:15:43 by yrabby            #+#    #+#             */
-/*   Updated: 2019/04/06 16:29:33 by yrabby           ###   ########.fr       */
+/*   Updated: 2019/04/07 13:23:56 by yrabby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,5 +58,15 @@ void	ft_strdel(char **tab);
 void	ft_memdel(void **tab);
 void	*ft_memalloc(size_t size);
 char	*ft_strnew(size_t size);
+int		ft_strequ(const char *s1, const char *s2);
+int		ft_strnequ(const char *s1, const char *s2, size_t n);
+char	*ft_strjoin(const  char *s1, const char *s2);
+char    *ft_strsub(const char *s, unsigned int start, size_t len);
+char	*ft_strtrim(const char*s);
+char	**ft_strsplit(const char *s, char c);
+char	*ft_itoa(int n);
+void	ft_striter(char *s, void (*f)(char *));
+void	ft_striteri(char *s, void (*f)(unsigned int, char *));
+char	*ft_strmap(const char *s,char (*f)(char));
 
 #endif

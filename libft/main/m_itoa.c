@@ -8,13 +8,11 @@
 
 int main()
 {
-	char *a;
+	int s1 = -13423450;
+	char *s3;
 	
-	a = ft_strnew(50);
-	//a[0] = (char*)malloc(sizeof(char) * 500);
-	//a[1] = (char*)malloc(sizeof(char) * 500);
-	//a[1] = "aaa";	
-	//printf("%s\n", a);
+	s3 = ft_itoa(s1);
+	printf("%s\n", s3);
 
 	//printf("%s\n", a[1]);
 

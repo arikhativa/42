@@ -1,22 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnew.c                                        :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yrabby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/06 16:27:10 by yrabby            #+#    #+#             */
-/*   Updated: 2019/04/07 11:55:33 by yrabby           ###   ########.fr       */
+/*   Created: 2019/04/07 09:23:27 by yrabby            #+#    #+#             */
+/*   Updated: 2019/04/07 09:28:59 by yrabby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-char	*ft_strnew(size_t size)
+char	*ft_strjoin(const  char *s1, const char *s2)
 {
-	char *str;
+	char *new;
+	int size;
+	int a;
 
-	str = ft_memalloc(size + 1);
-	str[size + 1] = '\0';
-	return (str);
+	size = ft_strlen(s1) + ft_strlen(s2);
+	new = (char*)malloc(sizeof(char) * (size + 1));
+	size = 0;
+	a = 0;
+	while (s1[size])
+	{
+		new[size] = s1[size];
+		size++;
+	}
+	while (s2[a])
+	{
+		new[size + a] = s2[a];
+		a++;
+	}
+	new[size + a] = '\0';
+	return (new);
 }
