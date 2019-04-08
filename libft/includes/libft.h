@@ -6,7 +6,7 @@
 /*   By: yrabby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/02 16:15:43 by yrabby            #+#    #+#             */
-/*   Updated: 2019/04/07 13:23:56 by yrabby           ###   ########.fr       */
+/*   Updated: 2019/04/08 15:44:52 by yrabby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,14 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <string.h>
+
+typedef struct	s_list
+{
+	void			*content;
+	size_t			content_size;
+	struct s_list	*next;
+}				t_list;
+
 
 int		ft_strlen(const char *str);
 char	*ft_strdup(const char *str);
@@ -68,5 +76,6 @@ char	*ft_itoa(int n);
 void	ft_striter(char *s, void (*f)(char *));
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 char	*ft_strmap(const char *s,char (*f)(char));
+t_list	*ft_lstnew(void *c, size_t s);
 
 #endif
