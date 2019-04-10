@@ -8,14 +8,14 @@
 
 int main()
 {
-	t_list *new;
+	t_list *ptr1;
+	t_list *ptr2;
 
+	char s1[] = "yoav y";
 
-	char s1[] = "yoav rabby";
-
-	new = ft_lstnew(s1, ft_strlen(s1));
-	printf("%s\n", (char*)new->content);
-	printf("%zu\n", new->content_size);
+	ptr1 = ft_lstnew(s1, ft_strlen(s1));
+	printf("out %s\n", ptr1->content);
+	printf("%zu\n", ptr1->content_size);
 
 	return (0);
 }
