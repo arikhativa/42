@@ -6,7 +6,7 @@
 /*   By: yrabby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/10 14:56:51 by yrabby            #+#    #+#             */
-/*   Updated: 2019/04/10 15:08:37 by yrabby           ###   ########.fr       */
+/*   Updated: 2019/04/11 11:27:06 by yrabby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,9 @@ int				ft_strncmp(const char *s1, const char *s2, size_t i);
 char			*ft_strcpy(char *dst, const char *src);
 char			*ft_strncpy(char *dst, const char *src, size_t n);
 char			*ft_strchr(const char *str, int n);
+char			*ft_strrchr(const char *str, int n);
 char			*ft_strstr(const char *s1, const char *s2);
-char			*ft_strnstr(const char *s1, const char *s2, size_t n);
+char			*nstr(const char *s1, const char *s2, size_t n);
 int				ft_isalpha(char c);
 int				ft_isdigit(char c);
 int				ft_isascii(char c);

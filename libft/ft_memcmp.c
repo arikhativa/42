@@ -6,7 +6,7 @@
 /*   By: yrabby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/04 12:32:19 by yrabby            #+#    #+#             */
-/*   Updated: 2019/04/10 15:49:37 by yrabby           ###   ########.fr       */
+/*   Updated: 2019/04/11 10:56:14 by yrabby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int		ft_memcmp(void *s1, void *s2, size_t n)
 {
-	size_t		i;
-	char		*p1;
-	char		*p2;
+	size_t			i;
+	unsigned char	*p1;
+	unsigned char	*p2;
 
 	p1 = s1;
 	p2 = s2;
@@ -24,10 +24,8 @@ int		ft_memcmp(void *s1, void *s2, size_t n)
 	while (i < n)
 	{
 		if (p1[i] != p2[i])
-			return (0);
+			return (p1[i] - p2[i]);
 		i++;
 	}
-	if (p1[i] != p2[i])
-		return (0);
-	return (1);
+	return (0);
 }
