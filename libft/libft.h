@@ -6,7 +6,7 @@
 /*   By: yrabby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/10 14:56:51 by yrabby            #+#    #+#             */
-/*   Updated: 2019/04/11 11:27:06 by yrabby           ###   ########.fr       */
+/*   Updated: 2019/04/11 12:18:13 by yrabby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,7 @@ char			*ft_strncpy(char *dst, const char *src, size_t n);
 char			*ft_strchr(const char *str, int n);
 char			*ft_strrchr(const char *str, int n);
 char			*ft_strstr(const char *s1, const char *s2);
+char			*ft_strnstr(const char *s1, const char *s2, size_t n);
 char			*nstr(const char *s1, const char *s2, size_t n);
 int				ft_isalpha(char c);
 int				ft_isdigit(char c);
@@ -74,6 +75,7 @@ char			*ft_itoa(int n);
 void			ft_striter(char *s, void (*f)(char *));
 void			ft_striteri(char *s, void (*f)(unsigned int, char *));
 char			*ft_strmap(const char *s, char (*f)(char));
+char			*ft_strmapi(const char *s, char (*f)(unsigned int, char));
 t_list			*ft_lstnew(void const *content, size_t content_size);
 void			ft_lstadd(t_list **alist, t_list *new);
 

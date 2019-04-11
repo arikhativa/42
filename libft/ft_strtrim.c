@@ -6,7 +6,7 @@
 /*   By: yrabby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/07 09:44:37 by yrabby            #+#    #+#             */
-/*   Updated: 2019/04/10 15:31:21 by yrabby           ###   ########.fr       */
+/*   Updated: 2019/04/11 13:33:18 by yrabby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,8 @@ char	*ft_strtrim(const char *s)
 	unsigned int	n;
 	size_t			len;
 
-	n = 0;
+	if (!s)
+		return (NULL);
 	n = ft_strlen(s);
 	while (SPACE)
 		n--;
@@ -27,6 +28,8 @@ char	*ft_strtrim(const char *s)
 	n = 0;
 	while (SPACE)
 		n++;
-	new = ft_strsub(s, n, len);
+	new = ft_strsub(s, n, len + 1);
+	if (new == NULL)
+		return (NULL);
 	return (new);
 }
