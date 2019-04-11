@@ -8,7 +8,7 @@
 
 int main()
 {
-	char s1[] = "yoav arie rabby";
+	char s1[] = "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse";
 	char **s3;
 	int n = 0;
 
