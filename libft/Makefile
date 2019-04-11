@@ -6,7 +6,7 @@
 #    By: yrabby <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/04/02 15:48:51 by yrabby            #+#    #+#              #
-#    Updated: 2019/04/10 15:36:14 by yrabby           ###   ########.fr        #
+#    Updated: 2019/04/11 17:05:08 by yrabby           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,10 +24,9 @@ SRC = ft_atoi.c \
 	  ft_lstnew.c \
 	  ft_memalloc.c \
 	  ft_memccpy.c \
+	  ft_memcpy.c \
 	  ft_memchr.c \
 	  ft_memcmp.c \
-	  ft_memcmp.c \
-	  ft_memdel.c \
 	  ft_memmove.c \
 	  ft_memset.c \
 	  ft_putchar.c \
@@ -65,7 +64,9 @@ SRC = ft_atoi.c \
 	  ft_strsub.c \
 	  ft_strtrim.c \
 	  ft_tolower.c \
-	  ft_toupper.c 
+	  ft_toupper.c \
+	  ft_lstdel.c \
+	  ft_lstdelone.c 
 
 FLAG = -Wall -Werror -Wextra
 

@@ -6,23 +6,14 @@
 #include <fcntl.h>
 #include "../includes/libft.h"
 
-char	ftft(char c)
-{
-	return (c = c - 32);
-}
 
 
 int main()
 {
-	char s1[] = "aaaaaaa";
-	char *s3;
-	char	(*f)(char);
-
-	f = &ftft;
+	char *ele;
 	
-	s3 = ft_strmap(s1, (*f));
-	printf("%s\n", s1);
-	printf("%s\n", s3);
+	tt_tt((char*)ele);
+	printf("%s\n", ele);
 
 	return (0);
 }
