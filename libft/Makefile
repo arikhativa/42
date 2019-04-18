@@ -6,7 +6,7 @@
 #    By: yrabby <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/04/02 15:48:51 by yrabby            #+#    #+#              #
-#    Updated: 2019/04/11 17:05:08 by yrabby           ###   ########.fr        #
+#    Updated: 2019/04/18 10:40:42 by yrabby           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -66,7 +66,10 @@ SRC = ft_atoi.c \
 	  ft_tolower.c \
 	  ft_toupper.c \
 	  ft_lstdel.c \
-	  ft_lstdelone.c 
+	  ft_lstdelone.c \
+	  ft_lstadd.c \
+	  ft_lstiter.c \
+	  ft_lstmap.c 
 
 FLAG = -Wall -Werror -Wextra
 
