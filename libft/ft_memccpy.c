@@ -6,7 +6,7 @@
 /*   By: yrabby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/06 14:14:30 by yrabby            #+#    #+#             */
-/*   Updated: 2019/04/10 15:34:04 by yrabby           ###   ########.fr       */
+/*   Updated: 2019/04/19 12:44:39 by yrabby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 	p1 = dst;
 	p2 = src;
 	i = 0;
-	if (ft_strlen(src) > ft_strlen(dst) || (int)n > ft_strlen(dst))
+	if ((int)n > ft_strlen(dst) + 1)
 		return (NULL);
 	while (i < n)
 	{

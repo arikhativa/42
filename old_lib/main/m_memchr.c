@@ -6,8 +6,8 @@
 
 int main()
 {
-	char s1[] = "yyypyyuuutty";
-	int ndel = 'p';
+	char s1[] = "yyypxyyuuutty";
+	int ndel = 120;
 	char *p1;
 	char *p2;
 

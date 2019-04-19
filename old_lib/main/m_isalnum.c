@@ -6,12 +6,11 @@
 
 int main()
 {
-	char c = '\n';
 	int n;
 	int a;
 
-	n = ft_isalnum(c);
-	a = isalnum(c);
+	n = ft_isalnum('a' + 0x100);
+	a = isalnum('a' + 0x100);
 	printf("ME      %d\n", n);
 	printf("ISALPHA %d\n", a);
 	return (0);
