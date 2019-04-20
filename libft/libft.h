@@ -6,7 +6,7 @@
 /*   By: yrabby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/10 14:56:51 by yrabby            #+#    #+#             */
-/*   Updated: 2019/04/18 10:36:47 by yrabby           ###   ########.fr       */
+/*   Updated: 2019/04/20 18:45:22 by yrabby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,11 +35,11 @@ char			*ft_strrchr(const char *str, int n);
 char			*ft_strstr(const char *s1, const char *s2);
 char			*ft_strnstr(const char *s1, const char *s2, size_t n);
 char			*nstr(const char *s1, const char *s2, size_t n);
-int				ft_isalpha(char c);
-int				ft_isdigit(char c);
-int				ft_isascii(char c);
-int				ft_isprint(char c);
-int				ft_isalnum(char c);
+int				ft_isalpha(int c);
+int				ft_isdigit(int c);
+int				ft_isascii(int c);
+int				ft_isprint(int c);
+int				ft_isalnum(int c);
 char			*ft_strcat(char *dst, const char *src);
 char			*ft_strncat(char *dst, const char *src, size_t i);
 int				ft_strlcat(char *dst, const char *src, size_t i);
