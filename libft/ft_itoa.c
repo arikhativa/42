@@ -6,7 +6,7 @@
 /*   By: yrabby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/08 14:53:55 by yrabby            #+#    #+#             */
-/*   Updated: 2019/04/20 19:43:41 by yrabby           ###   ########.fr       */
+/*   Updated: 2019/04/20 19:51:13 by yrabby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,18 +15,16 @@
 static char		*lim(int nbr)
 {
 	char *new;
-	char big[] = "-2147483648";
-	char zero[] = "0";
 
 	if (nbr != 0)
 	{
 		new = ft_strnew(12);
-		new = ft_strcpy(new, big);
+		new = ft_strcpy(new, "-2147483648");
 	}
 	else
 	{
 		new = ft_strnew(1);
-		new = ft_strcpy(new, zero);
+		new = ft_strcpy(new, "0");
 	}
 	return (new);
 }
