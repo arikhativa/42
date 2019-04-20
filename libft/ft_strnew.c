@@ -6,7 +6,7 @@
 /*   By: yrabby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/06 16:27:10 by yrabby            #+#    #+#             */
-/*   Updated: 2019/04/19 13:01:12 by yrabby           ###   ########.fr       */
+/*   Updated: 2019/04/20 19:45:39 by yrabby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@ char	*ft_strnew(size_t size)
 {
 	char *str;
 
-	str = ft_memalloc(sizeof(char) * (size + 1));
+	if (!(str = (char*)ft_memalloc(sizeof(char) * (size + 1))))
+		return (NULL);
 	str[size + 1] = '\0';
 	return (str);
 }

@@ -6,11 +6,30 @@
 /*   By: yrabby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/08 14:53:55 by yrabby            #+#    #+#             */
-/*   Updated: 2019/04/11 14:31:59 by yrabby           ###   ########.fr       */
+/*   Updated: 2019/04/20 19:43:41 by yrabby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static char		*lim(int nbr)
+{
+	char *new;
+	char big[] = "-2147483648";
+	char zero[] = "0";
+
+	if (nbr != 0)
+	{
+		new = ft_strnew(12);
+		new = ft_strcpy(new, big);
+	}
+	else
+	{
+		new = ft_strnew(1);
+		new = ft_strcpy(new, zero);
+	}
+	return (new);
+}
 
 static int		count(int n, int i)
 {
@@ -38,9 +57,9 @@ char			*ft_itoa(int n)
 	i = 0;
 	neg = 0;
 	if (n == -2147483648)
-		return ("-2147483648");
+		return (lim(n));
 	if (n == 0)
-		return ("0");
+		return (lim(n));
 	if (n < 0)
 	{
 		n = n * -1;
@@ -48,8 +67,7 @@ char			*ft_itoa(int n)
 		neg = 1;
 	}
 	i = count(n, i);
-	s = ft_strnew(i);
-	if (s == NULL)
+	if (!(s = ft_strnew(i)))
 		return (NULL);
 	putnbr(n, s, i - 1);
 	if (neg)

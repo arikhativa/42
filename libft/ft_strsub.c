@@ -6,7 +6,7 @@
 /*   By: yrabby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/07 09:32:50 by yrabby            #+#    #+#             */
-/*   Updated: 2019/04/20 19:04:40 by yrabby           ###   ########.fr       */
+/*   Updated: 2019/04/20 19:07:31 by yrabby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strsub(const char *s, unsigned int start, size_t len)
 	size_t	n;
 
 	if (!s)
-		return (NULL):
+		return (NULL);
 	n = 0;
 	new = ft_strnew(len);
 	if (new == NULL)
