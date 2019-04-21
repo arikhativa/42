@@ -6,7 +6,7 @@
 /*   By: yrabby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/10 14:56:51 by yrabby            #+#    #+#             */
-/*   Updated: 2019/04/20 18:45:22 by yrabby           ###   ########.fr       */
+/*   Updated: 2019/04/21 15:03:55 by yrabby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ typedef	struct	s_list
 	struct s_list	*next;
 }				t_list;
 
-int				ft_strlen(const char *str);
+size_t			ft_strlen(const char *str);
 char			*ft_strdup(const char *str);
 int				ft_atoi(const char *str);
 int				ft_strcmp(const char *s1, const char *s2);
@@ -42,7 +42,7 @@ int				ft_isprint(int c);
 int				ft_isalnum(int c);
 char			*ft_strcat(char *dst, const char *src);
 char			*ft_strncat(char *dst, const char *src, size_t i);
-int				ft_strlcat(char *dst, const char *src, size_t i);
+size_t			ft_strlcat(char *dst, const char *src, size_t i);
 void			*ft_memset(void *ptr, int n, size_t len);
 int				ft_memcmp(void *s1, void *s2, size_t n);
 void			*ft_memchr(const void *str, int c, size_t n);
