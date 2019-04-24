@@ -6,7 +6,7 @@
 #    By: yrabby <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/04/02 15:48:51 by yrabby            #+#    #+#              #
-#    Updated: 2019/04/19 12:23:06 by yrabby           ###   ########.fr        #
+#    Updated: 2019/04/24 11:30:02 by yrabby           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -84,8 +84,9 @@ all: $(NAME)
 
 .PRECIOUS: $(SRC) $(HED) author
 
-$(NAME): $(SRC)
-		@gcc $(FLAG) -c $^
+$(NAME): $(OBJ) Makefile libft.h
+		echo "\033[32m..Compiling..\033[33m"
+		@gcc $(FLAG) -c $(SRC)
 		@ar rv $(NAME) $(OBJ)
 		@ranlib $(NAME)
 
