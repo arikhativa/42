@@ -5,8 +5,8 @@
 
 int main()
 {
-	int base = 10;
-	char nbr[] = "ff";
+	int base = 16;
+	char nbr[] = "FaAf";
 
 	printf("%d\n", ft_basecnv(nbr, base));
 }

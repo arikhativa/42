@@ -6,7 +6,7 @@
 /*   By: yrabby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/25 09:55:45 by yrabby            #+#    #+#             */
-/*   Updated: 2019/04/25 14:00:47 by yrabby           ###   ########.fr       */
+/*   Updated: 2019/04/25 14:14:46 by yrabby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,11 @@ static int	get_num(char nbr, int base)
 	int		i;
 	char	*lst;
 
-	lst = ft_strdup("0123456789abcdef");
 	i = 0;
+	lst = ft_strdup("0123456789abcdef");
 	while (lst[i] && i < base)
 	{
-		if (lst[i] == nbr)
+		if (lst[i] == ft_tolower(nbr))
 			return (i);
 		i++;
 	}
