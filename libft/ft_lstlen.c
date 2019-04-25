@@ -1,24 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_intcount.c                                      :+:      :+:    :+:   */
+/*   ft_lstlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yrabby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/24 14:23:19 by yrabby            #+#    #+#             */
-/*   Updated: 2019/04/25 10:59:21 by yrabby           ###   ########.fr       */
+/*   Created: 2019/04/25 09:48:04 by yrabby            #+#    #+#             */
+/*   Updated: 2019/04/25 09:48:11 by yrabby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_intcount(int nbr)
-{
-	int d;
+#include "libft.h"
 
-	d = 1;
-	while (nbr / 10 != 0)
+int	ft_lstlen(t_list *lst)
+{
+	int n;
+
+	n = 0;
+	if (!lst)
+		return (0);
+	while (lst)
 	{
-		nbr = nbr / 10;
-		d++;
+		lst = lst->next;
+		n++;
 	}
-	return (d);
+	return (n);
 }

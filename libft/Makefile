@@ -6,7 +6,7 @@
 #    By: yrabby <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/04/02 15:48:51 by yrabby            #+#    #+#              #
-#    Updated: 2019/04/24 14:52:01 by yrabby           ###   ########.fr        #
+#    Updated: 2019/04/25 12:27:00 by yrabby           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -72,7 +72,9 @@ SRC = ft_atoi.c \
 	  ft_lstiter.c \
 	  ft_lstmap.c \
 	  ft_intcount.c \
-	  ft_isprime.c
+	  ft_isprime.c \
+	  ft_lstlen.c \
+	  ft_power.c
 
 OBJ = $(SRC:.c=.o)
 
