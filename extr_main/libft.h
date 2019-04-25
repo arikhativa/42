@@ -6,7 +6,7 @@
 /*   By: yrabby <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/10 14:56:51 by yrabby            #+#    #+#             */
-/*   Updated: 2019/04/25 09:45:56 by yrabby           ###   ########.fr       */
+/*   Updated: 2019/04/25 13:12:38 by yrabby           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,5 +86,7 @@ t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 int				ft_intcount(int nbr);
 int				ft_isprime(unsigned int nbr);
 int				ft_lstlen(t_list *lst);
+int				ft_power(int nbr, int power);
+int				ft_basecnv(char *nbr, int base);
 
 #endif
