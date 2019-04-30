@@ -6,7 +6,7 @@
 #    By: yrabby <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/04/02 15:48:51 by yrabby            #+#    #+#              #
-#    Updated: 2019/04/25 13:58:59 by yrabby           ###   ########.fr        #
+#    Updated: 2019/04/30 14:34:26 by yrabby           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -79,7 +79,9 @@ SRC = ft_atoi.c \
 
 OBJ = $(SRC:.c=.o)
 
-FLAG = -Wall -Werror -Wextra
+CC = gcc
+
+CFLAGS = -Wall -Werror -Wextra
 
 HED = libft.h
 
@@ -90,7 +92,6 @@ all: $(NAME)
 .PRECIOUS: $(SRC) $(HED) author
 
 $(NAME): $(OBJ) Makefile libft.h
-		@gcc $(FLAG) -c $(SRC)
 		@ar rv $(NAME) $(OBJ)
 		@ranlib $(NAME)
 
